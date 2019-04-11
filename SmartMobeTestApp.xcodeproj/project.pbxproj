@@ -15,6 +15,16 @@
 		7D48DB71225E12F400ABE3AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D48DB6F225E12F400ABE3AD /* LaunchScreen.storyboard */; };
 		7D48DB7C225E12F500ABE3AD /* SmartMobeTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D48DB7B225E12F500ABE3AD /* SmartMobeTestAppTests.swift */; };
 		7D48DB87225E12F500ABE3AD /* SmartMobeTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D48DB86225E12F500ABE3AD /* SmartMobeTestAppUITests.swift */; };
+		7D48DB96225E140700ABE3AD /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D48DB95225E140700ABE3AD /* ImageExtension.swift */; };
+		7D48DB9B225E142200ABE3AD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D48DB98225E142200ABE3AD /* APIManager.swift */; };
+		7D48DB9C225E142200ABE3AD /* SmartMobeUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D48DB99225E142200ABE3AD /* SmartMobeUrl.swift */; };
+		7D48DB9D225E142200ABE3AD /* DefaultResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D48DB9A225E142200ABE3AD /* DefaultResponce.swift */; };
+		7D65B1EC225F0D8900BAC367 /* SearchImageVedio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D65B1EB225F0D8900BAC367 /* SearchImageVedio.swift */; };
+		7D65B1EE225F237500BAC367 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D65B1ED225F237500BAC367 /* DetailViewController.swift */; };
+		7D66AB5D225E25F30050F80F /* ImageVedioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66AB5C225E25F30050F80F /* ImageVedioModel.swift */; };
+		7D66AB5F225E2DB40050F80F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66AB5E225E2DB40050F80F /* TableViewCell.swift */; };
+		7DADD8E0225EE77E001DE96E /* CustomTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DADD8DF225EE77E001DE96E /* CustomTableview.swift */; };
+		CB1B20D40FEAC01B777AA77D /* Pods_SmartMobeTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E69AA4AD3825936E72A98D8 /* Pods_SmartMobeTestApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E69AA4AD3825936E72A98D8 /* Pods_SmartMobeTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMobeTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E5F961D0150EEC82B2DF44 /* Pods-SmartMobeTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMobeTestApp/Pods-SmartMobeTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		7D48DB60225E12F400ABE3AD /* SmartMobeTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMobeTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D48DB63225E12F400ABE3AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D48DB65225E12F400ABE3AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +61,16 @@
 		7D48DB82225E12F500ABE3AD /* SmartMobeTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartMobeTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D48DB86225E12F500ABE3AD /* SmartMobeTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMobeTestAppUITests.swift; sourceTree = "<group>"; };
 		7D48DB88225E12F500ABE3AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D48DB95225E140700ABE3AD /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		7D48DB98225E142200ABE3AD /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		7D48DB99225E142200ABE3AD /* SmartMobeUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartMobeUrl.swift; sourceTree = "<group>"; };
+		7D48DB9A225E142200ABE3AD /* DefaultResponce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultResponce.swift; sourceTree = "<group>"; };
+		7D65B1EB225F0D8900BAC367 /* SearchImageVedio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageVedio.swift; sourceTree = "<group>"; };
+		7D65B1ED225F237500BAC367 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7D66AB5C225E25F30050F80F /* ImageVedioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVedioModel.swift; sourceTree = "<group>"; };
+		7D66AB5E225E2DB40050F80F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7DADD8DF225EE77E001DE96E /* CustomTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableview.swift; sourceTree = "<group>"; };
+		E7EB6281F8B69DE82C02DDC8 /* Pods-SmartMobeTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobeTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMobeTestApp/Pods-SmartMobeTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1B20D40FEAC01B777AA77D /* Pods_SmartMobeTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34827FE1829520C7675E2678 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7EB6281F8B69DE82C02DDC8 /* Pods-SmartMobeTestApp.debug.xcconfig */,
+				57E5F961D0150EEC82B2DF44 /* Pods-SmartMobeTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7D48DB57225E12F400ABE3AD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,8 @@
 				7D48DB7A225E12F500ABE3AD /* SmartMobeTestAppTests */,
 				7D48DB85225E12F500ABE3AD /* SmartMobeTestAppUITests */,
 				7D48DB61225E12F400ABE3AD /* Products */,
+				34827FE1829520C7675E2678 /* Pods */,
+				D4160F114C5A88356C4FD723 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +133,12 @@
 		7D48DB62225E12F400ABE3AD /* SmartMobeTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				7D48DBA0225E149400ABE3AD /* View */,
+				7D48DB9F225E147D00ABE3AD /* Controller */,
+				7D48DB9E225E147200ABE3AD /* Model */,
+				7D48DB97225E142200ABE3AD /* Utilities */,
+				7D48DB94225E140700ABE3AD /* Extension */,
 				7D48DB63225E12F400ABE3AD /* AppDelegate.swift */,
-				7D48DB65225E12F400ABE3AD /* ViewController.swift */,
-				7D48DB67225E12F400ABE3AD /* Main.storyboard */,
 				7D48DB6D225E12F400ABE3AD /* Assets.xcassets */,
 				7D48DB6F225E12F400ABE3AD /* LaunchScreen.storyboard */,
 				7D48DB72225E12F400ABE3AD /* Info.plist */,
@@ -128,6 +165,60 @@
 			path = SmartMobeTestAppUITests;
 			sourceTree = "<group>";
 		};
+		7D48DB94225E140700ABE3AD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7D48DB95225E140700ABE3AD /* ImageExtension.swift */,
+				7DADD8DF225EE77E001DE96E /* CustomTableview.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7D48DB97225E142200ABE3AD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7D48DB98225E142200ABE3AD /* APIManager.swift */,
+				7D48DB99225E142200ABE3AD /* SmartMobeUrl.swift */,
+				7D48DB9A225E142200ABE3AD /* DefaultResponce.swift */,
+				7D66AB5E225E2DB40050F80F /* TableViewCell.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7D48DB9E225E147200ABE3AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D66AB5C225E25F30050F80F /* ImageVedioModel.swift */,
+				7D65B1EB225F0D8900BAC367 /* SearchImageVedio.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D48DB9F225E147D00ABE3AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D48DB65225E12F400ABE3AD /* ViewController.swift */,
+				7D65B1ED225F237500BAC367 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D48DBA0225E149400ABE3AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D48DB67225E12F400ABE3AD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4160F114C5A88356C4FD723 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E69AA4AD3825936E72A98D8 /* Pods_SmartMobeTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D48DB8B225E12F500ABE3AD /* Build configuration list for PBXNativeTarget "SmartMobeTestApp" */;
 			buildPhases = (
+				D31732BBE18352BD452926E4 /* [CP] Check Pods Manifest.lock */,
 				7D48DB5C225E12F400ABE3AD /* Sources */,
 				7D48DB5D225E12F400ABE3AD /* Frameworks */,
 				7D48DB5E225E12F400ABE3AD /* Resources */,
+				0E335E6D9302D8AFD7AC2F32 /* [CP] Embed Pods Frameworks */,
+				39BE847121E8E852D911515D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +348,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E335E6D9302D8AFD7AC2F32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SmartMobeTestApp/Pods-SmartMobeTestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartMobeTestApp/Pods-SmartMobeTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39BE847121E8E852D911515D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartMobeTestApp/Pods-SmartMobeTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D31732BBE18352BD452926E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartMobeTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7D48DB5C225E12F400ABE3AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,7 +417,16 @@
 			files = (
 				7D48DB6C225E12F400ABE3AD /* SmartMobeTestApp.xcdatamodeld in Sources */,
 				7D48DB66225E12F400ABE3AD /* ViewController.swift in Sources */,
+				7DADD8E0225EE77E001DE96E /* CustomTableview.swift in Sources */,
+				7D65B1EE225F237500BAC367 /* DetailViewController.swift in Sources */,
+				7D48DB9B225E142200ABE3AD /* APIManager.swift in Sources */,
+				7D66AB5F225E2DB40050F80F /* TableViewCell.swift in Sources */,
+				7D65B1EC225F0D8900BAC367 /* SearchImageVedio.swift in Sources */,
+				7D66AB5D225E25F30050F80F /* ImageVedioModel.swift in Sources */,
 				7D48DB64225E12F400ABE3AD /* AppDelegate.swift in Sources */,
+				7D48DB9C225E142200ABE3AD /* SmartMobeUrl.swift in Sources */,
+				7D48DB96225E140700ABE3AD /* ImageExtension.swift in Sources */,
+				7D48DB9D225E142200ABE3AD /* DefaultResponce.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +599,7 @@
 		};
 		7D48DB8C225E12F500ABE3AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7EB6281F8B69DE82C02DDC8 /* Pods-SmartMobeTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +618,7 @@
 		};
 		7D48DB8D225E12F500ABE3AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E5F961D0150EEC82B2DF44 /* Pods-SmartMobeTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
