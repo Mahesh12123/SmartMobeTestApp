@@ -11,14 +11,11 @@ import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet var detailImage: UIImageView!
-    
     var getImage = String()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         detailImage.setURLImage(imageURL: getImage)
-        
     }
     
     @IBAction func backAction(_ sender: Any) {

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -14,7 +16,9 @@ class ViewController: UIViewController {
     
     @IBOutlet var searchBar: UISearchBar!
     
-    var searchImage = [String]()
+   var player = AVPlayer()
+   var PlayerviewController = AVPlayerViewController()
+    
     
     var searching = false
     
@@ -35,7 +39,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      searchBar.delegate = self
+        searchBar.delegate = self
         
         ImageVedio.requestForImageVedio(self, WithCompletion: {  (responce) in
             
@@ -72,15 +76,62 @@ extension ViewController:UITableViewDataSource,UITableViewDelegate {
         cell?.backgroundColor = .gray
         if searching {
             cell?.imageViewCell.setURLImage(imageURL: searchData![indexPath.row].searchurl)
+            let imageExtensions = ["png", "jpg", "gif"]
+            let url: URL? = NSURL(fileURLWithPath: searchData![indexPath.row].searchurl!) as URL
+            let pathExtention = url?.pathExtension
+            if imageExtensions.contains(pathExtention!)
+            {
+                cell?.playBtn.isHidden = true
+                
+            }else
+            {
+                cell?.playBtn.isHidden = false
+                cell?.playBtn.isUserInteractionEnabled = true
+                cell?.playBtn.addTarget(self, action: #selector(self.play(_:)), for: .touchUpInside)
+            }
             
         }else {
              cell?.imageViewCell.setURLImage(imageURL: imagedata![indexPath.row].url)
+            let imageExtensions = ["png", "jpg", "gif"]
+            let url: URL? = NSURL(fileURLWithPath: imagedata![indexPath.row].url!) as URL
+            let pathExtention = url?.pathExtension
+            if imageExtensions.contains(pathExtention!)
+            {
+                cell?.playBtn.isHidden = true
+               
+            }else
+            {
+                cell?.playBtn.isHidden = false
+                cell?.playBtn.isUserInteractionEnabled = true
+                cell?.playBtn.addTarget(self, action: #selector(self.play(_:)), for: .touchUpInside)
+              
+            }
             
         }
         
         return cell!
     }
     
+    @objc  func play(_ sender : UIControl) {
+        
+        if searching {
+              guard  let videoString = self.searchData?[sender.tag].searchlargerurl else {return}
+            let videoURL = NSURL(string: videoString)
+            let player = AVPlayer(url: videoURL! as URL)
+            let playerViewController = AVPlayerViewController()
+            playerViewController.player = player
+            self.present(playerViewController, animated: true, completion: nil)
+        }else {
+             guard  let videoString = self.imagedata?[sender.tag].largerurl else {return}
+            let videoURL = NSURL(string: videoString)
+            let player = AVPlayer(url: videoURL! as URL)
+            let playerViewController = AVPlayerViewController()
+            playerViewController.player = player
+            self.present(playerViewController, animated: true, completion: nil)
+        }
+        
+        
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
@@ -93,16 +144,28 @@ extension ViewController:UITableViewDataSource,UITableViewDelegate {
         let DetailVc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         
         if searching{
-        DetailVc.getImage = searchData![indexPath.row].searchlargerurl!
+       
+            DetailVc.getImage = searchData![indexPath.row].searchlargerurl!
+            self.present(DetailVc, animated: true, completion: nil)
+
+           
         }else {
-              DetailVc.getImage = imagedata![indexPath.row].largerurl!
+            
+            let imageExtensions = ["png", "jpg", "gif"]
+            let url: URL? = NSURL(fileURLWithPath: imagedata![indexPath.row].largerurl!) as URL
+            let pathExtention = url?.pathExtension
+            if imageExtensions.contains(pathExtention!)
+            {
+                 DetailVc.getImage = imagedata![indexPath.row].largerurl!
+                  self.present(DetailVc, animated: true, completion: nil)
+             
+            }else
+            {
+             
+    
+            }
         }
-        
-        self.present(DetailVc, animated: true, completion: nil)
-        
     }
-    
-    
 }
 
 extension ViewController: UISearchBarDelegate {

@@ -12,9 +12,13 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet var imageViewCell: UIImageView!
     
+    @IBOutlet var playBtn: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+      //  playBtn.isHidden = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

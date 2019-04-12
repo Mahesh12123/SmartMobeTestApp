@@ -32,12 +32,10 @@ class SearchingModel:DefaultResponce {
     }
     
     
-    
-    
     class func requestToSearch( search:String ,viewController:UIViewController, withComplection completion:@escaping (SearchingModel?) ->(),withError error:@escaping () ->()) {
         
         let params = ["query":search]
-        APIManager(urlString: SmartMobeurl.searchimageVedio, parameters: params,  method: .get).HandleResponce( viewController: viewController, progressMessage: "", completionHandler: { (responce:SearchingModel) in
+        APIManager(urlString: SmartMobeurl.searchimageVedio, parameters: params,  method: .get).HandleResponce( viewController: viewController, progressMessage: "Searching", completionHandler: { (responce:SearchingModel) in
             
             completion(responce)
             

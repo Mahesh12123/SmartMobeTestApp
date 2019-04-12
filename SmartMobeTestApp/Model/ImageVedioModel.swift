@@ -33,7 +33,7 @@ class ImageVedio:DefaultResponce {
     
     class func requestForImageVedio(_ viewController:UIViewController , WithCompletion completion:@escaping(ImageVedio?) ->(), withError error:@escaping()->()) {
         
-        APIManager(urlString: SmartMobeurl.ImageVedio, method: .get).HandleResponce( viewController: viewController, completionHandler: { (responceimage:ImageVedio) in
+        APIManager(urlString: SmartMobeurl.ImageVedio, method: .get).HandleResponce( viewController: viewController, progressMessage:"Loading Image" , completionHandler: { (responceimage:ImageVedio) in
             
             print("responce ==\(responceimage)")
             completion(responceimage)

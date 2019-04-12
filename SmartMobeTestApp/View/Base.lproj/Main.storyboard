@@ -43,10 +43,20 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DnD-CN-X4q">
                                                     <rect key="frame" x="16" y="0.0" width="382" height="240.5"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUy-nq-veT">
+                                                    <rect key="frame" x="162" y="75.5" width="90" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="1gL-f2-Hmk"/>
+                                                        <constraint firstAttribute="height" constant="90" id="u6d-hS-f5x"/>
+                                                    </constraints>
+                                                    <state key="normal" image="playBtn"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="TUy-nq-veT" firstAttribute="centerY" secondItem="Bin-Jv-Q2X" secondAttribute="centerY" id="07q-dj-XPK"/>
                                                 <constraint firstItem="DnD-CN-X4q" firstAttribute="leading" secondItem="Bin-Jv-Q2X" secondAttribute="leading" constant="16" id="GgA-Ab-B3B"/>
                                                 <constraint firstAttribute="bottom" secondItem="DnD-CN-X4q" secondAttribute="bottom" id="Vf1-g5-Tre"/>
+                                                <constraint firstItem="TUy-nq-veT" firstAttribute="centerX" secondItem="Bin-Jv-Q2X" secondAttribute="centerX" id="fZw-Y0-SX5"/>
                                                 <constraint firstAttribute="trailing" secondItem="DnD-CN-X4q" secondAttribute="trailing" constant="16" id="jXj-8a-b9O"/>
                                                 <constraint firstItem="DnD-CN-X4q" firstAttribute="top" secondItem="Bin-Jv-Q2X" secondAttribute="top" id="lfo-qB-jqi"/>
                                             </constraints>
@@ -54,6 +64,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="imageViewCell" destination="DnD-CN-X4q" id="9ga-gR-onm"/>
+                                            <outlet property="playBtn" destination="TUy-nq-veT" id="oPx-xt-AyX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -133,4 +144,7 @@
             <point key="canvasLocation" x="982.60869565217399" y="102.45535714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="playBtn" width="256" height="256"/>
+    </resources>
 </document>
